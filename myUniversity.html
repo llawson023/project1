@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My University - Leon Lawson</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffffff, #f7f7f7);
+            min-height: 100vh;
+        }
+        
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: #666;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin: 1rem 0;
+        }
+        
+        h2 {
+            color: #444;
+            margin-top: 0;
+        }
+        
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .course {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myUniversity.html">My University</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>New Jersey City University</h1>
+        
+        <div class="card">
+            <h2>Computer Science Major</h2>
+            <p>2021 - 2026</p>
+            
+            <h3>Current Courses</h3>
+            <div class="courses">
+                <div class="course">CS 430 - Internet Multimedia Program</div>
+                <div class="course">CS 404 - Artificial Intelligence</div>
+                <div class="course">CS 355 - Visual Programming</div>
+                <div class="course">CS 350 - Software Engineering I</div>
+            </div>
+            
+            <h3>Completed Courses</h3>
+            <div class="courses">
+                <div class="course">CS 306 - Data Base Design</div>
+                <div class="course">CS 300 - Computer Architecture</div>
+                <div class="course">CS 204 - Computer Organization</div>
+                <div class="course">CS 209 - Data Structures</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
